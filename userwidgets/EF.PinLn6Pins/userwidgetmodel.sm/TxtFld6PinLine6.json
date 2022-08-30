@@ -1,0 +1,78 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "6",
+    "_right_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_skin_": "s475390614dd45aa81626b3573660b4b",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "android": {
+        "ide_onBeginEditing": "AS_TextField_a0ba6314cda94c69853e7a3c8e22458c",
+        "ide_onEndEditing": "AS_TextField_ed3cc3bd502a43ac8bec81f0f489819e"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "focusskin": "s3be268b5e1447b683cf85ad68157082",
+    "id": "TxtFld6PinLine6",
+    "ide_onTextChange": "AS_TextField_a4f931fb7fd749d89e70d8af12e75c8d",
+    "info": null,
+    "iphone": {
+        "ide_onBeginEditing": "AS_TextField_cad82637638046c28e9ec4f1a5dd6dac",
+        "ide_onEndEditing": "AS_TextField_da5e66a1c4ac4ad99406d72ac2e1fbe4",
+        "psp": {
+            "showClearButton": false,
+            "showCloseButton": true
+        }
+    },
+    "isvisible": true,
+    "keyboardstyle": "digitpad",
+    "keyboardtype": "A",
+    "kuid": "ad2d333eb8ce4c13ba2221dd0ed35071",
+    "maxtextlength": 1,
+    "mode": "N",
+    "name": "kony.ui.TextBox2",
+    "paddinginpixel": false,
+    "parent": "Container6PinLine6",
+    "pf": "userwidgetmodel",
+    "placeholderskin": "s1261ab5948c493497d181bc878d5c65",
+    "securetextentry": false,
+    "showclearbutton": false,
+    "textinputmode": "N",
+    "tooltip": "",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

@@ -1,0 +1,128 @@
+{
+    "AS_Form_j20532cb763c4951b962157cb60e7a2b": {
+        "id": "AS_Form_j20532cb763c4951b962157cb60e7a2b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "SurveyResults",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d7cd3df990184d929c189d57e38d5eed"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_d33a291f42e34baeaa15aa100c6e60ec",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "SurveyData",
+            "isGlobal": false,
+            "valuetype": "expression",
+            "datatype": "string",
+            "value": "Data.records",
+            "parentId": "INVOKE_SERVICE_c151cf27f35d443a9a6c05b815f7b742",
+            "callbackType": "Callback"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_fdf8b2607e4e4b419e62acccb02908d4",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "masterData",
+            "isGlobal": false,
+            "valuetype": "constant",
+            "datatype": "collection",
+            "value": "[]",
+            "parentId": "INVOKE_SERVICE_c151cf27f35d443a9a6c05b815f7b742",
+            "callbackType": "Callback"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_dbe6f35c142d48d387cbb21f517a9557",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "nCharts",
+            "isGlobal": false,
+            "valuetype": "expression",
+            "datatype": "number",
+            "value": "Data.records.length",
+            "parentId": "INVOKE_SERVICE_c151cf27f35d443a9a6c05b815f7b742",
+            "callbackType": "Callback"
+        }, {
+            "id": "ADD_SNIPPET_bcaca71a1a1a40dd949b8cadf2b375f0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "alert(SurveyData)\nvar questionResults = [];\nvar tempData = []\nvar Results = [\"5 - Highly Satisfied\", \"4 - Satisfied\", \"3 - Neutral\", \"2 - Dissatisfied\", \"1 - Highly Dissatisfied\"]\nvar colorCodes = [\"#2C52E0\",\"#B91F19\",\"#7CC582\",\"#7F45DA\",\"#BBB207\"]\n\n\nfor (var i = 0; i < SurveyData.length; ++i) {\n  questionResults[i] = JSON.parse(SurveyData[i].Result)\n  for (var counter in questionResults[i]) {\n    tempData.push({\n      \"colorCode\": colorCodes[counter],\n      \"label\": Results[counter],\n      \"value\": questionResults[i][counter]\n    });\n  }\n  masterData.push(tempData)\n  tempData = []\n}\n// var Question1Results = JSON.parse(SurveyData[0].Result)\n// var Question2Results = JSON.parse(SurveyData[1].Result)\n\n\n// for (var counter in Question1Results) {\n//     tempData.push({\n//       \"colorCode\": colorCodes[counter],\n//       \"label\": Results[counter],\n//       \"value\": Question1Results[counter]\n//     });\n// }\n// masterData.push(tempData)\n// tempData = []\n\n\n// for (var counter in Question2Results) {\n//     tempData.push({\n//       \"colorCode\": colorCodes[counter],\n//       \"label\": Results[counter],\n//       \"value\": Question2Results[counter]\n//     });\n// }\n// masterData.push(tempData)\n\n\n\n// alert(data)\n\n\n\n",
+            "parentId": "INVOKE_SERVICE_c151cf27f35d443a9a6c05b815f7b742",
+            "callbackType": "Callback"
+        }, {
+            "id": "INVOKE_FUNCTION__db633da0496b4b1d8b52a063ada26d65",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "createPieChart",
+            "display": "createPieChart",
+            "inputparams": [{
+                "name": "data",
+                "value": " masterData"
+            }, {
+                "name": "nCharts",
+                "value": " nCharts"
+            }],
+            "parentId": "INVOKE_SERVICE_c151cf27f35d443a9a6c05b815f7b742",
+            "callbackType": "Callback",
+            "disabled": null,
+            "source": "controller"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_e98fd79a96624ea59c7db45eed19503e",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "SurveyID",
+            "isGlobal": false,
+            "valuetype": "constant",
+            "datatype": "number",
+            "value": "1"
+        }, {
+            "id": "INVOKE_SERVICE_c151cf27f35d443a9a6c05b815f7b742",
+            "type": "INVOKE_OBJECT_SERVICE",
+            "inputparams": {
+                "$filter": [{
+                    "queryString": "\"Survey_ID eq '\" + SurveyID + \"'\""
+                }]
+            },
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": null,
+            "isoffline": null,
+            "isobject": true,
+            "mappings": {
+                "ME_Mapping_e691ebfe69dd475bb99cc68afd57b5ee": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_e691ebfe69dd475bb99cc68afd57b5ee",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "SurveyID",
+                        "dataType": "number",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "Survey_ID",
+                        "dataType": "number",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SurveyDB",
+                            "type": "objectsvcs",
+                            "objectname": "Data",
+                            "serviceid": "a7097e84-6a4a-4db1-961e-26403b41f609",
+                            "methodname": "get"
+                        }
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_e691ebfe69dd475bb99cc68afd57b5ee"],
+            "serviceconfig": {
+                "servicename": "SurveyDB",
+                "type": "objectsvcs",
+                "objectname": "Data",
+                "serviceid": "a7097e84-6a4a-4db1-961e-26403b41f609",
+                "methodname": "get"
+            },
+            "enableMappingEditor": true
+        }]
+    }
+}

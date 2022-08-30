@@ -1,0 +1,56 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "60dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s47e795cba3c4447921a0aef431ecef2",
+    "_text_": "SIGN UP",
+    "_top_": {
+        "type": "string",
+        "value": "4.00%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "300dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50.00%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sb65c7dc8d6940e9b8d7d1340c7f108c",
+    "id": "btnSign",
+    "ide_onClick": "AS_Button_e94ad37377574e1ea8273d8e64f49ec6",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "c2c30900278d4393ad8c50ded3749d1e",
+    "name": "kony.ui.Button",
+    "parent": "StartScreen",
+    "pf": "StartScreen",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 1
+}

@@ -1,0 +1,110 @@
+{
+    "AS_Button_g7abe8eed7b144e8bbeb84c9849fe31b": {
+        "id": "AS_Button_g7abe8eed7b144e8bbeb84c9849fe31b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Login",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ef09666e2a22490a9a0ba852ea92bcee"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__hf8f9f5b0839492db2f93eb7452a39fd",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "Home",
+            "formKUID": "e9a958dae55e42e8bd10302a66f2a586",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "INVOKE_SERVICE_ce8762ef46d6442eb5aaf852ab547c5b",
+            "callbackType": "Success",
+            "enableMappingEditor": true,
+            "package": "",
+            "isCustomInput": false
+        }, {
+            "id": "INVOKE_SERVICE_ce8762ef46d6442eb5aaf852ab547c5b",
+            "type": "INVOKE_IDENTITY_SERVICE",
+            "mappings": {
+                "ME_Mapping_dfb94564138f4a10a50ea6c9a2312716": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_dfb94564138f4a10a50ea6c9a2312716",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "txtEmail",
+                        "widgetPath": "this.view.txtEmail",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "Login",
+                        "widgetKUID": "d30230272d944499b0b50b95d0c81223",
+                        "itemKUID": "ef09666e2a22490a9a0ba852ea92bcee",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "userid",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "operationname": "login",
+                            "servicename": "userSurfLogin",
+                            "type": "identity",
+                            "isDeepLinkRequired": false,
+                            "login_type": "basic"
+                        }
+                    }
+                },
+                "ME_Mapping_ca7ad032beb54aab904db0d6ef0b9c31": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_ca7ad032beb54aab904db0d6ef0b9c31",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "txtPassword",
+                        "widgetPath": "this.view.txtPassword",
+                        "widgetType": "TextField",
+                        "dataType": "string",
+                        "itemId": "Login",
+                        "widgetKUID": "fa1a512336eb4fd7b7dca280f9bc112d",
+                        "itemKUID": "ef09666e2a22490a9a0ba852ea92bcee",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "password",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "operationname": "login",
+                            "servicename": "userSurfLogin",
+                            "type": "identity",
+                            "isDeepLinkRequired": false,
+                            "login_type": "basic"
+                        }
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_dfb94564138f4a10a50ea6c9a2312716", "ME_Mapping_ca7ad032beb54aab904db0d6ef0b9c31"],
+            "serviceconfig": {
+                "operationname": "login",
+                "servicename": "userSurfLogin",
+                "type": "identity",
+                "isDeepLinkRequired": false,
+                "login_type": "basic"
+            },
+            "enableMappingEditor": true,
+            "useDeviceBrowser": false,
+            "isDeepLinkRequired": false
+        }]
+    }
+}

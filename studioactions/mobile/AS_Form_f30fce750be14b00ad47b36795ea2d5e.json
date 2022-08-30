@@ -1,0 +1,26 @@
+{
+    "AS_Form_f30fce750be14b00ad47b36795ea2d5e": {
+        "id": "AS_Form_f30fce750be14b00ad47b36795ea2d5e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Survey",
+            "type": "forms",
+            "platform": "",
+            "KUID": "icfee7ffbf3642adbb5356a3583199ed"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_gd305483bcd348adab058c084cb8abc8",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "Counter",
+            "isGlobal": true,
+            "valuetype": "simple",
+            "datatype": "number",
+            "value": "0"
+        }]
+    }
+}

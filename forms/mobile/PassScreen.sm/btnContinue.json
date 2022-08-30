@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "15%"
+    },
+    "_height_": {
+        "type": "number",
+        "value": "50"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s47e795cba3c4447921a0aef431ecef2",
+    "_text_": "Continue",
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s63b108efc524a87a55196ad080b16c4",
+    "id": "btnContinue",
+    "ide_onClick": "AS_Button_a31fb43bed594a7ea8a4389b4b447149",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "h20972e4346142b7909ab6183581a904",
+    "name": "kony.ui.Button",
+    "parent": "FlexGroup0fa8fbee7ddf74e",
+    "pf": "PassScreen",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 1
+}

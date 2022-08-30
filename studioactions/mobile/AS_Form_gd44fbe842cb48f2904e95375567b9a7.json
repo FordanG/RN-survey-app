@@ -1,0 +1,104 @@
+{
+    "AS_Form_gd44fbe842cb48f2904e95375567b9a7": {
+        "id": "AS_Form_gd44fbe842cb48f2904e95375567b9a7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Survey",
+            "type": "forms",
+            "platform": "",
+            "KUID": "icfee7ffbf3642adbb5356a3583199ed"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_SERVICE_ga9bc22eca754446b91b77f1a3ffcf50",
+            "type": "INVOKE_OBJECT_SERVICE",
+            "inputparams": {
+                "$filter": [{
+                    "queryString": "\"Survey_ID eq '\" + voltmx.visualizer.toNumber(this.navigationContext.SgmtCerts_EntryID) + \"'\""
+                }]
+            },
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": null,
+            "isoffline": null,
+            "isobject": true,
+            "mappings": {
+                "ME_Mapping_ec6726fe549b4b4ab8376efed810260e": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_ec6726fe549b4b4ab8376efed810260e",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "navigationobject",
+                        "propertyName": "SgmtCerts_EntryID",
+                        "dataType": "string",
+                        "collectionId": "selectedRowItems",
+                        "isSkinProperty": false,
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "Survey_ID",
+                        "dataType": "number",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SurveyDB",
+                            "type": "objectsvcs",
+                            "objectname": "Data",
+                            "serviceid": "a7097e84-6a4a-4db1-961e-26403b41f609",
+                            "methodname": "get"
+                        }
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_ec6726fe549b4b4ab8376efed810260e"],
+            "serviceconfig": {
+                "servicename": "SurveyDB",
+                "type": "objectsvcs",
+                "objectname": "Data",
+                "serviceid": "a7097e84-6a4a-4db1-961e-26403b41f609",
+                "methodname": "get"
+            },
+            "parentId": "_b3a554954aba45f5a6856cf8e23b1946",
+            "enableMappingEditor": true
+        }, {
+            "id": "_b3a554954aba45f5a6856cf8e23b1946",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "navigationsource",
+                "leftValue": "(this.getPreviousForm() === \"Home\") && this.navigationContext && this.navigationContext._meta_ && (this.navigationContext._meta_.widgetId ===  \"SgmtCerts\") && (this.navigationContext._meta_.eventName ===  \"onRowClick\")",
+                "operator": "===",
+                "rightValue": "",
+                "leftItemKUID": "e9a958dae55e42e8bd10302a66f2a586",
+                "leftWidgetKUID": "dd3fa8175fc049d2aaf3d86a6cb32cca",
+                "sequenceId": "AS_Segment_b309d5ff6239455085ba991ce814ab72",
+                "eventName": "onRowClick",
+                "widgetId": "SgmtCerts"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_c456c59dd11b4c299fa4e3f9e93ea1bf",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "QuestionsData",
+            "isGlobal": false,
+            "valuetype": "expression",
+            "datatype": "string",
+            "value": "Data.records",
+            "parentId": "INVOKE_SERVICE_ga9bc22eca754446b91b77f1a3ffcf50",
+            "callbackType": "Callback"
+        }, {
+            "id": "ADD_SNIPPET_b06383d6cf374533aa3de8d7ee56e038",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "self.view.lblExamTitle.text = QuestionsData[0][\"Survey_Name\"] + \" Survey\";\nself.view.lblQuestion.text = QuestionsData[0][\"Question\"]\nself.view.lblQuestionNum.text = voltmx.visualizer.toString(QuestionsData[0][\"Question_No\"]);\nself.view.lblQuestionLength.text = voltmx.visualizer.toString(QuestionsData.length)",
+            "parentId": "INVOKE_SERVICE_ga9bc22eca754446b91b77f1a3ffcf50",
+            "callbackType": "Callback"
+        }]
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "AS_Button_f9fa42466f024faf87a5b934b65e08fd": {
+        "id": "AS_Button_f9fa42466f024faf87a5b934b65e08fd",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Home",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e9a958dae55e42e8bd10302a66f2a586"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__a3f0237e3f7f4f24a302a1340c1e8515",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "SurveyResults",
+            "formKUID": "d7cd3df990184d929c189d57e38d5eed",
+            "mappings": {},
+            "mappingsOrder": [],
+            "enableMappingEditor": true,
+            "package": "",
+            "isCustomInput": false
+        }]
+    }
+}

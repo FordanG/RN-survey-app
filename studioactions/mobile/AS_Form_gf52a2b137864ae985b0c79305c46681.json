@@ -1,0 +1,197 @@
+{
+    "AS_Form_gf52a2b137864ae985b0c79305c46681": {
+        "id": "AS_Form_gf52a2b137864ae985b0c79305c46681",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Survey",
+            "type": "forms",
+            "platform": "",
+            "KUID": "icfee7ffbf3642adbb5356a3583199ed"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_MAPPING_i7faf7d981944447bf88617a73737998",
+            "type": "ADD_MAPPING",
+            "mappings": {
+                "ME_Mapping_ed67cfbc77be4535a41b30d23877eec5": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_ed67cfbc77be4535a41b30d23877eec5",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Question",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"Question\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SurveyDB",
+                            "type": "objectsvcs",
+                            "objectname": "Data",
+                            "serviceid": "a7097e84-6a4a-4db1-961e-26403b41f609",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Forms",
+                        "propertyName": "text",
+                        "widgetId": "lblQuestion",
+                        "widgetPath": "this.view.lblQuestion",
+                        "widgetType": "Label",
+                        "dataType": "string",
+                        "itemId": "Survey",
+                        "widgetKUID": "dbeb14050a2143fd9cae614a7d81eb95",
+                        "itemKUID": "icfee7ffbf3642adbb5356a3583199ed",
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_b9151f24a9e24e818ab37d20a913f2d0": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_b9151f24a9e24e818ab37d20a913f2d0",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Services",
+                        "propertyName": "Result",
+                        "dataType": "string",
+                        "collectionId": "records",
+                        "propertyPath": "[\"records\"][0][\"Result\"]",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SurveyDB",
+                            "type": "objectsvcs",
+                            "objectname": "Data",
+                            "serviceid": "a7097e84-6a4a-4db1-961e-26403b41f609",
+                            "methodname": "get"
+                        }
+                    },
+                    "target": {
+                        "type": "Variables",
+                        "propertyName": "DataResultString",
+                        "dataType": "string",
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_ed67cfbc77be4535a41b30d23877eec5", "ME_Mapping_b9151f24a9e24e818ab37d20a913f2d0"],
+            "parentId": "INVOKE_SERVICE_a78628d91c1e408a922fc6cfa19b7c6e",
+            "callbackType": "Callback",
+            "enableMappingEditor": true
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_d9e6f4bfefe141a4a6ddcef9ef6265d1",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "DataResults",
+            "isGlobal": false,
+            "valuetype": "expression",
+            "datatype": "collection",
+            "value": "JSON.parse(DataResultString)",
+            "parentId": "INVOKE_SERVICE_a78628d91c1e408a922fc6cfa19b7c6e",
+            "callbackType": "Callback"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_daf38e000e1d4c29bd4c8a4f1805c087",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "SurveyData",
+            "isGlobal": false,
+            "valuetype": "expression",
+            "datatype": "string",
+            "value": "Data[\"records\"]",
+            "parentId": "INVOKE_SERVICE_a78628d91c1e408a922fc6cfa19b7c6e",
+            "callbackType": "Callback"
+        }, {
+            "id": "ADD_SNIPPET_fac64c0eaf5240a6a7e2371776eaad8d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "// alert(DataResults)\nalert(SurveyData)",
+            "parentId": "INVOKE_SERVICE_a78628d91c1e408a922fc6cfa19b7c6e",
+            "callbackType": "Callback"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_h2498e6fd6664760aea5548b57f77ab3",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "SurveyID",
+            "isGlobal": false,
+            "valuetype": "constant",
+            "datatype": "number",
+            "value": "1"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_a3c845b3932e45c69883915d73371119",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "Counter",
+            "isGlobal": true,
+            "valuetype": "simple",
+            "datatype": "number",
+            "value": "0"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_j00ab0e4a69042daafc59e83ab95f124",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "DataResultString",
+            "isGlobal": false,
+            "valuetype": "constant",
+            "datatype": "string",
+            "value": "\"\""
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_gc7b04fdba3646188e42f2f7e1009391",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "DataQuestions",
+            "isGlobal": true,
+            "valuetype": "collection",
+            "datatype": "collection",
+            "value": "null"
+        }, {
+            "id": "INVOKE_SERVICE_a78628d91c1e408a922fc6cfa19b7c6e",
+            "type": "INVOKE_OBJECT_SERVICE",
+            "inputparams": {
+                "$filter": [{
+                    "queryString": "\"Survey_ID eq '\" + SurveyID + \"'\""
+                }]
+            },
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": null,
+            "isoffline": null,
+            "isobject": true,
+            "mappings": {
+                "ME_Mapping_ecbd332bda5840cb9d75159a9acc5ffd": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_ecbd332bda5840cb9d75159a9acc5ffd",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "SurveyID",
+                        "dataType": "number",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "Survey_ID",
+                        "dataType": "number",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SurveyDB",
+                            "type": "objectsvcs",
+                            "objectname": "Data",
+                            "serviceid": "a7097e84-6a4a-4db1-961e-26403b41f609",
+                            "methodname": "get"
+                        }
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_ecbd332bda5840cb9d75159a9acc5ffd"],
+            "serviceconfig": {
+                "servicename": "SurveyDB",
+                "type": "objectsvcs",
+                "objectname": "Data",
+                "serviceid": "a7097e84-6a4a-4db1-961e-26403b41f609",
+                "methodname": "get"
+            },
+            "enableMappingEditor": true
+        }]
+    }
+}

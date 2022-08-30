@@ -1,0 +1,100 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRadio",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "200dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "17dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sfbd247634f8467ea062e819fdb598d4",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "300dp"
+    },
+    "android": {
+        "psp": {
+            "viewType": 0
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "groupcells": false,
+    "id": "radioSurveyAnswer",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "viewType": 0
+        }
+    },
+    "iphone": {
+        "psp": {
+            "viewType": 3
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "itemorientation": "vertical",
+    "kuid": "a02f4302cc37436fac855e0d0ceaa716",
+    "masterdata": [
+        [
+            "1",
+            "5 - Highly Satisfied"
+        ],
+        [
+            "2",
+            "4 - Satisfied"
+        ],
+        [
+            "3",
+            "3 - Neither"
+        ],
+        [
+            "4",
+            "2 - Dissatisfied"
+        ],
+        [
+            "5",
+            "1 - Highly Dissatisfied"
+        ]
+    ],
+    "name": "kony.ui.RadioButtonGroup",
+    "paddinginpixel": false,
+    "parent": "FlexGroup0h037b91c2bfc40",
+    "pf": "Survey",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "selectedkey": "3",
+    "selectedkeyvalue": [
+        "3",
+        "3 - Neither"
+    ],
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "RadioButtonGroup",
+    "widgetalignment": 5,
+    "zindex": 1
+}

@@ -1,0 +1,95 @@
+{
+    "AS_Segment_b309d5ff6239455085ba991ce814ab72": {
+        "id": "AS_Segment_b309d5ff6239455085ba991ce814ab72",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "Home",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e9a958dae55e42e8bd10302a66f2a586"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__cb75e388b2da4eaa9fcc6992e7c3ed45",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "Survey",
+            "formKUID": "icfee7ffbf3642adbb5356a3583199ed",
+            "mappings": {
+                "ME_Mapping_c743b5a212e94e2cbc6462b82d8f3dfb": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_c743b5a212e94e2cbc6462b82d8f3dfb",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "EntryID",
+                        "propertyKey": "SgmtCerts_EntryID",
+                        "widgetId": "SgmtCerts",
+                        "widgetPath": "this.view.SgmtCerts",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "Home",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "dd3fa8175fc049d2aaf3d86a6cb32cca",
+                        "itemKUID": "e9a958dae55e42e8bd10302a66f2a586",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "a28ce88ad9d045fba42e411f2b20a904",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.EntryID"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                },
+                "ME_Mapping_f8b09239dda941aa8b4759ca3225cb30": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_f8b09239dda941aa8b4759ca3225cb30",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Forms",
+                        "propertyName": "lblCertTitle",
+                        "propertyKey": "SgmtCerts_lblCertTitle",
+                        "widgetId": "SgmtCerts",
+                        "widgetPath": "this.view.SgmtCerts",
+                        "widgetType": "Segment",
+                        "dataType": "string",
+                        "itemId": "Home",
+                        "collectionId": "selectedRowItems",
+                        "widgetKUID": "dd3fa8175fc049d2aaf3d86a6cb32cca",
+                        "itemKUID": "e9a958dae55e42e8bd10302a66f2a586",
+                        "forkedPlatform": "all",
+                        "segmentChildInfo": {
+                            "kuid": "ecc04779c40c46219961c3490eb815c0",
+                            "widgetType": "Label",
+                            "widgetPath": "this.view.lblCertTitle"
+                        }
+                    },
+                    "target": {
+                        "forkedPlatform": "all"
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_c743b5a212e94e2cbc6462b82d8f3dfb", "ME_Mapping_f8b09239dda941aa8b4759ca3225cb30"],
+            "enableMappingEditor": true,
+            "package": "",
+            "enableNavigationObj": true,
+            "navigationObj": "{\n    \"SgmtCerts_EntryID\": voltmx.visualizer.getPropertyValue(self.view.SgmtCerts.selectedRowItems[0][\"EntryID\"], \"text\"),\n    \"SgmtCerts_lblCertTitle\": voltmx.visualizer.getPropertyValue(self.view.SgmtCerts.selectedRowItems[0][\"lblCertTitle\"], \"text\"),\n    \"_meta_\": {\n        \"eventName\": \"onRowClick\",\n        \"widgetId\": \"SgmtCerts\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

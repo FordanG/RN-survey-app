@@ -1,0 +1,265 @@
+{
+    "models": {
+        "mobile": {
+            "class": "GraphLinksModel",
+            "linkDataArray": [
+                {
+                    "actionId": "NAVIGATE_TO_FORM__cb75e388b2da4eaa9fcc6992e7c3ed45",
+                    "actionSequenceId": "AS_Segment_b309d5ff6239455085ba991ce814ab72",
+                    "beautifiedPath": "Home > SgmtCerts > onRowClick",
+                    "evt": "ide_onRowClick",
+                    "from": "e9a958dae55e42e8bd10302a66f2a586",
+                    "isPSP": false,
+                    "points": [
+                        -79.62684268482991,
+                        163.8907502988426,
+                        -89.62684268482991,
+                        163.8907502988426,
+                        -92,
+                        163.8907502988426,
+                        -92,
+                        308,
+                        -199.97545617320304,
+                        308,
+                        -199.97545617320304,
+                        307.38068725599373,
+                        -199.97545617320304,
+                        317.38068725599373
+                    ],
+                    "to": "icfee7ffbf3642adbb5356a3583199ed",
+                    "widgetKUID": "dd3fa8175fc049d2aaf3d86a6cb32cca"
+                },
+                {
+                    "actionId": "NAVIGATE_TO_FORM__be26a06fad804ebd946a049eda1253b1",
+                    "actionSequenceId": "AS_Button_e5da888ceec6436ca4d495251a89bb07",
+                    "beautifiedPath": "Instructions > Button0af80de4c45124b > onClick",
+                    "evt": "ide_onClick",
+                    "from": "a1fd5d3c132f47e98c7461baa1d0c616",
+                    "isPSP": false,
+                    "points": [
+                        -300.68645825909704,
+                        470.5806872559937,
+                        -290.68645825909704,
+                        470.5806872559937,
+                        -290.33095721615007,
+                        470.5806872559937,
+                        -290.33095721615007,
+                        470.5806872559937,
+                        -289.97545617320304,
+                        470.5806872559937,
+                        -279.97545617320304,
+                        470.5806872559937
+                    ],
+                    "to": "icfee7ffbf3642adbb5356a3583199ed",
+                    "widgetKUID": "db272272a51a4c56ae6369c18b42781c"
+                },
+                {
+                    "actionId": "NAVIGATE_TO_FORM__hf8f9f5b0839492db2f93eb7452a39fd",
+                    "actionSequenceId": "AS_Button_g7abe8eed7b144e8bbeb84c9849fe31b",
+                    "beautifiedPath": "Login > btnLogin > onClick",
+                    "evt": "ide_onClick",
+                    "from": "ef09666e2a22490a9a0ba852ea92bcee",
+                    "isPSP": false,
+                    "points": [
+                        -119.97545617320304,
+                        112.8240836321759,
+                        -109.97545617320304,
+                        112.8240836321759,
+                        -108,
+                        112.8240836321759,
+                        -108,
+                        61.757416965509265,
+                        -97.62684268482991,
+                        61.757416965509265,
+                        -79.62684268482991,
+                        61.757416965509265
+                    ],
+                    "to": "e9a958dae55e42e8bd10302a66f2a586",
+                    "widgetKUID": "gdf14f4cf9e04bb1b4598bd7abe9f822"
+                },
+                {
+                    "actionId": "NAVIGATE_TO_FORM__de0a445709864be5a811aa69ba1b7f87",
+                    "actionSequenceId": "AS_Button_dccdb6998e6446a9a18fc41d78f45f16",
+                    "beautifiedPath": "StartScreen > btnLogin > onClick",
+                    "evt": "ide_onClick",
+                    "from": "dca55160c140420b8a849cec1af93e24",
+                    "isPSP": false,
+                    "points": [
+                        -300.686458259097,
+                        163.89075029884253,
+                        -282.686458259097,
+                        163.89075029884253,
+                        -282.686458259097,
+                        138.35741696550923,
+                        -289.97545617320304,
+                        138.35741696550923,
+                        -289.97545617320304,
+                        112.82408363217593,
+                        -279.97545617320304,
+                        112.82408363217593
+                    ],
+                    "to": "ef09666e2a22490a9a0ba852ea92bcee",
+                    "widgetKUID": "gbbcef1ca2384293a957a977eeb6dbb9"
+                },
+                {
+                    "actionId": "NAVIGATE_TO_FORM__ibc36406d2b340c1aff25a9e45f62c98",
+                    "actionSequenceId": "AS_Button_e94ad37377574e1ea8273d8e64f49ec6",
+                    "beautifiedPath": "StartScreen > btnSign > onClick",
+                    "evt": "ide_onClick",
+                    "from": "dca55160c140420b8a849cec1af93e24",
+                    "isPSP": false,
+                    "points": [
+                        -300.686458259097,
+                        61.75741696550922,
+                        -282.686458259097,
+                        61.75741696550922,
+                        -282.686458259097,
+                        61.75741696550922,
+                        -282.686458259097,
+                        -76,
+                        100,
+                        -76,
+                        100,
+                        112.82408363217587,
+                        248.92212093852697,
+                        112.82408363217587,
+                        258.922120938527,
+                        112.82408363217587
+                    ],
+                    "to": "d7cd3df990184d929c189d57e38d5eed",
+                    "widgetKUID": "c2c30900278d4393ad8c50ded3749d1e"
+                },
+                {
+                    "actionId": "NAVIGATE_TO_FORM__e123d628b470424189850888831b3574",
+                    "actionSequenceId": "AS_Button_j76b81b418ae4142809344f9bb6732b7",
+                    "beautifiedPath": "Survey > btnSubmit > onClick",
+                    "evt": "ide_onClick",
+                    "from": "icfee7ffbf3642adbb5356a3583199ed",
+                    "isPSP": false,
+                    "points": [
+                        -119.97545617320304,
+                        470.5806872559937,
+                        -109.97545617320304,
+                        470.5806872559937,
+                        -109.97545617320304,
+                        470.5806872559938,
+                        -109.97545617320304,
+                        470.5806872559938,
+                        -89.62684268482991,
+                        470.5806872559938,
+                        -79.62684268482991,
+                        470.5806872559938
+                    ],
+                    "to": "d54ecebd9a62479bb1c9e9bb96c7dcca",
+                    "widgetKUID": "a04c2ee32e164a609feb09445de82237"
+                },
+                {
+                    "actionId": null,
+                    "from": "dca55160c140420b8a849cec1af93e24",
+                    "points": [
+                        -301.68645825909704,
+                        112.8240836321759,
+                        -291.68645825909704,
+                        112.8240836321759,
+                        -301.33095721615007,
+                        112.8240836321759,
+                        -301.33095721615007,
+                        112.8240836321759,
+                        -289.97545617320304,
+                        112.8240836321759,
+                        -279.97545617320304,
+                        112.8240836321759
+                    ],
+                    "softLink": true,
+                    "to": "ef09666e2a22490a9a0ba852ea92bcee"
+                },
+                {
+                    "actionId": null,
+                    "from": "ef09666e2a22490a9a0ba852ea92bcee",
+                    "points": [
+                        -120.97545617320304,
+                        112.8240836321759,
+                        -110.97545617320304,
+                        112.8240836321759,
+                        -110.80114942901648,
+                        112.8240836321759,
+                        -110.80114942901648,
+                        112.8240836321759,
+                        -89.62684268482991,
+                        112.8240836321759,
+                        -79.62684268482991,
+                        112.8240836321759
+                    ],
+                    "softLink": true,
+                    "to": "e9a958dae55e42e8bd10302a66f2a586"
+                }
+            ],
+            "nodeDataArray": [
+                {
+                    "formKUID": "e9a958dae55e42e8bd10302a66f2a586",
+                    "formName": "Home",
+                    "isStartupForm": false,
+                    "key": "e9a958dae55e42e8bd10302a66f2a586",
+                    "loc": "-79.62684268482991 -40.375916367824075",
+                    "thumbnailURL": "/assets/SurveyApp/forms/mobile/Home.sm/.thumbs/default.jpeg"
+                },
+                {
+                    "formKUID": "a1fd5d3c132f47e98c7461baa1d0c616",
+                    "formName": "Instructions",
+                    "isStartupForm": false,
+                    "key": "a1fd5d3c132f47e98c7461baa1d0c616",
+                    "loc": "-460.68645825909704 317.38068725599373",
+                    "thumbnailURL": "/assets/SurveyApp/forms/mobile/Instructions.sm/.thumbs/default.jpeg"
+                },
+                {
+                    "formKUID": "ef09666e2a22490a9a0ba852ea92bcee",
+                    "formName": "Login",
+                    "isStartupForm": false,
+                    "key": "ef09666e2a22490a9a0ba852ea92bcee",
+                    "loc": "-279.97545617320304 -40.37591636782409",
+                    "thumbnailURL": "/assets/SurveyApp/forms/mobile/Login.sm/.thumbs/default.jpeg"
+                },
+                {
+                    "formKUID": "d54ecebd9a62479bb1c9e9bb96c7dcca",
+                    "formName": "PassScreen",
+                    "isStartupForm": false,
+                    "key": "d54ecebd9a62479bb1c9e9bb96c7dcca",
+                    "loc": "-79.62684268482991 317.3806872559938",
+                    "thumbnailURL": "/assets/SurveyApp/forms/mobile/PassScreen.sm/.thumbs/default.jpeg"
+                },
+                {
+                    "formKUID": "c86bf30add7e4b43ad86e06c899b8496",
+                    "formName": "Rewards",
+                    "isStartupForm": false,
+                    "key": "c86bf30add7e4b43ad86e06c899b8496",
+                    "loc": "98.92212093852697 317.38068725599373",
+                    "thumbnailURL": null
+                },
+                {
+                    "formKUID": "dca55160c140420b8a849cec1af93e24",
+                    "formName": "StartScreen",
+                    "isStartupForm": true,
+                    "key": "dca55160c140420b8a849cec1af93e24",
+                    "loc": "-460.686458259097 -40.375916367824104",
+                    "thumbnailURL": "/assets/SurveyApp/forms/mobile/StartScreen.sm/.thumbs/default.jpeg"
+                },
+                {
+                    "formKUID": "icfee7ffbf3642adbb5356a3583199ed",
+                    "formName": "Survey",
+                    "isStartupForm": false,
+                    "key": "icfee7ffbf3642adbb5356a3583199ed",
+                    "loc": "-279.97545617320304 317.38068725599373",
+                    "thumbnailURL": null
+                },
+                {
+                    "formKUID": "d7cd3df990184d929c189d57e38d5eed",
+                    "formName": "SurveyResults",
+                    "isStartupForm": false,
+                    "key": "d7cd3df990184d929c189d57e38d5eed",
+                    "loc": "258.922120938527 -40.375916367824104",
+                    "thumbnailURL": "/assets/SurveyApp/forms/mobile/SurveyResults.sm/.thumbs/default.jpeg"
+                }
+            ]
+        }
+    }
+}

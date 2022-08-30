@@ -1,0 +1,295 @@
+{
+    "AS_Button_j76b81b418ae4142809344f9bb6732b7": {
+        "id": "AS_Button_j76b81b418ae4142809344f9bb6732b7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Survey",
+            "type": "forms",
+            "platform": "",
+            "KUID": "icfee7ffbf3642adbb5356a3583199ed"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "SET_FORM_WIDGET_PROPERTY_Untitled__ee7705e6d6c34c5390cc51a6d458c246",
+            "type": "SET_WIDGET_PROPERTY",
+            "itemType": "FORM",
+            "itemId": "Survey",
+            "widgetId": "btnSubmit",
+            "propertyName": "text",
+            "propertyValue": "Next Question",
+            "itemKUID": "icfee7ffbf3642adbb5356a3583199ed",
+            "widgetKUID": "a04c2ee32e164a609feb09445de82237",
+            "isSkinProperty": false,
+            "wType": "Button",
+            "forkedPlatform": "all",
+            "parentId": "_ff1006a0bbab44ecac68762fb25375ed",
+            "widgetPath": "this.view.btnSubmit"
+        }, {
+            "id": "INVOKE_SERVICE_a9cb481167234049a2161b70203b580e",
+            "type": "INVOKE_OBJECT_SERVICE",
+            "inputparams": {
+                "$filter": [{
+                    "queryString": "\"Survey_ID eq '\" + voltmx.visualizer.toNumber(this.navigationContext.SgmtCerts_EntryID) + \"'\""
+                }]
+            },
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": null,
+            "isoffline": null,
+            "isobject": true,
+            "mappings": {
+                "ME_Mapping_e406b7355fb34de6ad72a8e599908255": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_e406b7355fb34de6ad72a8e599908255",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "navigationobject",
+                        "propertyName": "SgmtCerts_EntryID",
+                        "dataType": "string",
+                        "collectionId": "selectedRowItems",
+                        "isSkinProperty": false,
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "Survey_ID",
+                        "dataType": "number",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SurveyDB",
+                            "type": "objectsvcs",
+                            "objectname": "Data",
+                            "serviceid": "a7097e84-6a4a-4db1-961e-26403b41f609",
+                            "methodname": "get"
+                        }
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_e406b7355fb34de6ad72a8e599908255"],
+            "serviceconfig": {
+                "servicename": "SurveyDB",
+                "type": "objectsvcs",
+                "objectname": "Data",
+                "serviceid": "a7097e84-6a4a-4db1-961e-26403b41f609",
+                "methodname": "get"
+            },
+            "parentId": "_a961c5025eb549169fcd2df132373f97",
+            "enableMappingEditor": true
+        }, {
+            "id": "_a961c5025eb549169fcd2df132373f97",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "navigationsource",
+                "leftValue": "(this.getPreviousForm() === \"Home\") && this.navigationContext && this.navigationContext._meta_ && (this.navigationContext._meta_.widgetId ===  \"SgmtCerts\") && (this.navigationContext._meta_.eventName ===  \"onRowClick\")",
+                "operator": "===",
+                "rightValue": "",
+                "leftItemKUID": "e9a958dae55e42e8bd10302a66f2a586",
+                "leftWidgetKUID": "dd3fa8175fc049d2aaf3d86a6cb32cca",
+                "sequenceId": "AS_Segment_b309d5ff6239455085ba991ce814ab72",
+                "eventName": "onRowClick",
+                "widgetId": "SgmtCerts"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "NAVIGATE_TO_FORM__e123d628b470424189850888831b3574",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "PassScreen",
+            "formKUID": "d54ecebd9a62479bb1c9e9bb96c7dcca",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "_c051e089f2c942719e939fce8266cf9b",
+            "enableMappingEditor": true,
+            "package": "",
+            "isCustomInput": false
+        }, {
+            "id": "_d84f803bf71642428e3ffd2c6e0d519e",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "widgetprop",
+                "leftValue": "this.view.lblQuestionNum.text",
+                "operator": "===",
+                "rightValueType": "widgetprop",
+                "rightValue": "this.view.lblQuestionLength.text",
+                "leftItemKUID": "icfee7ffbf3642adbb5356a3583199ed",
+                "leftWidgetKUID": "a02b0171b8cd49eba6e2e02bacb2d237",
+                "rightItemKUID": "icfee7ffbf3642adbb5356a3583199ed",
+                "rightWidgetKUID": "e4cf62a20f3a4bdfb31fbf61aa354dc3"
+            }],
+            "parentId": "INVOKE_SERVICE_becd15b9cbef4049b8736f3880298f04",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "_ff1006a0bbab44ecac68762fb25375ed",
+            "type": "ELSE_CONDITION",
+            "conditions": [{
+                "leftValueType": "widgetprop",
+                "leftValue": "",
+                "operator": "===",
+                "rightValueType": "widgetprop",
+                "rightValue": ""
+            }],
+            "parentId": "INVOKE_SERVICE_becd15b9cbef4049b8736f3880298f04",
+            "callbackType": "Callback",
+            "criteria": "all"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_b05d83fc54fd4c9ab141e2f2b03420cb",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "ClickCounter",
+            "isGlobal": false,
+            "valuetype": "expression",
+            "datatype": "number",
+            "value": "parseInt(self.view.lblClickCounter.text)",
+            "parentId": "_d84f803bf71642428e3ffd2c6e0d519e"
+        }, {
+            "id": "SET_FORM_WIDGET_PROPERTY_Untitled__i0c9dd177b884cf794035bbe1f6687bf",
+            "type": "SET_WIDGET_PROPERTY",
+            "itemType": "FORM",
+            "itemId": "Survey",
+            "widgetId": "btnSubmit",
+            "propertyName": "text",
+            "propertyValue": "Complete Survey",
+            "itemKUID": "icfee7ffbf3642adbb5356a3583199ed",
+            "widgetKUID": "a04c2ee32e164a609feb09445de82237",
+            "isSkinProperty": false,
+            "wType": "Button",
+            "forkedPlatform": "all",
+            "parentId": "_d84f803bf71642428e3ffd2c6e0d519e",
+            "widgetPath": "this.view.btnSubmit"
+        }, {
+            "id": "MODIFY_VARIABLE_ACTION_f21945129a674bf386b9b03732cb8dfb",
+            "type": "MODIFY_VARIABLE_ACTION",
+            "parentId": "_d84f803bf71642428e3ffd2c6e0d519e",
+            "variable": "ClickCounter",
+            "valueType": "inc",
+            "isGlobal": false,
+            "dataType": "constant",
+            "modifySet": "0",
+            "modifySetType": "string"
+        }, {
+            "id": "ADD_SNIPPET_d5dff6fdc0e542ec9f9227dd3e358a3e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "self.view.lblClickCounter.text = voltmx.visualizer.toString(ClickCounter)",
+            "parentId": "_d84f803bf71642428e3ffd2c6e0d519e"
+        }, {
+            "id": "_c051e089f2c942719e939fce8266cf9b",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "varvalue",
+                "leftValue": "ClickCounter",
+                "operator": "===",
+                "rightValueType": "value",
+                "rightValue": "2"
+            }],
+            "parentId": "_d84f803bf71642428e3ffd2c6e0d519e",
+            "criteria": "all"
+        }, {
+            "id": "ADD_SNIPPET_h3c051a0872242c5b2f4bd731874ad0a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "  var QuestionsData = Data[\"records\"];\n  var Counter = parseInt(self.view.lblQuestionNum.text);\nif (Counter < parseInt(self.view.lblQuestionLength.text))\n  {\n    self.view.lblQuestion.text = QuestionsData[Counter][\"Question\"]\nself.view.lblQuestionNum.text = voltmx.visualizer.toString(QuestionsData[Counter][\"Question_No\"]);\n  }\n\nvar Result = JSON.parse(QuestionsData[Counter-1][\"Result\"])\nalert(\"Result = \" + Result)\nResult[self.view.radioSurveyAnswer.selectedKeyValue[0]-1] += 1;\nalert(\"New Result = \" + Result )",
+            "parentId": "INVOKE_SERVICE_a9cb481167234049a2161b70203b580e",
+            "callbackType": "Callback"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_e7f955e6a13548a58dbdef9c99e21262",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "EntryID",
+            "isGlobal": false,
+            "valuetype": "expression",
+            "datatype": "string",
+            "value": "QuestionsData[Counter-1][\"Entry_ID\"]",
+            "parentId": "INVOKE_SERVICE_a9cb481167234049a2161b70203b580e",
+            "callbackType": "Callback"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_ib55b8bec412442097cd5027e6675da8",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "StringResult",
+            "isGlobal": false,
+            "valuetype": "expression",
+            "datatype": "string",
+            "value": "JSON.stringify(Result)",
+            "parentId": "INVOKE_SERVICE_a9cb481167234049a2161b70203b580e",
+            "callbackType": "Callback"
+        }, {
+            "id": "INVOKE_SERVICE_becd15b9cbef4049b8736f3880298f04",
+            "type": "INVOKE_OBJECT_SERVICE",
+            "inputparams": null,
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": null,
+            "isoffline": null,
+            "isobject": true,
+            "mappings": {
+                "ME_Mapping_eb61f48962c643aba79f143002b2ffe0": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_eb61f48962c643aba79f143002b2ffe0",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "EntryID",
+                        "dataType": "string",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "Entry_ID",
+                        "dataType": "number",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SurveyDB",
+                            "type": "objectsvcs",
+                            "objectname": "Data",
+                            "serviceid": "a7097e84-6a4a-4db1-961e-26403b41f609",
+                            "methodname": "update"
+                        }
+                    }
+                },
+                "ME_Mapping_ef0a83f9af164834b4b651bff749114b": {
+                    "channel": "mobile",
+                    "id": "ME_Mapping_ef0a83f9af164834b4b651bff749114b",
+                    "type": "MAPPING",
+                    "callbackType": null,
+                    "rectified": true,
+                    "source": {
+                        "type": "Variables",
+                        "propertyName": "StringResult",
+                        "dataType": "string",
+                        "forkedPlatform": "all"
+                    },
+                    "target": {
+                        "type": "Services",
+                        "propertyName": "Result",
+                        "dataType": "string",
+                        "forkedPlatform": "all",
+                        "serviceconfig": {
+                            "servicename": "SurveyDB",
+                            "type": "objectsvcs",
+                            "objectname": "Data",
+                            "serviceid": "a7097e84-6a4a-4db1-961e-26403b41f609",
+                            "methodname": "update"
+                        }
+                    }
+                }
+            },
+            "mappingsOrder": ["ME_Mapping_eb61f48962c643aba79f143002b2ffe0", "ME_Mapping_ef0a83f9af164834b4b651bff749114b"],
+            "serviceconfig": {
+                "servicename": "SurveyDB",
+                "type": "objectsvcs",
+                "objectname": "Data",
+                "serviceid": "a7097e84-6a4a-4db1-961e-26403b41f609",
+                "methodname": "update"
+            },
+            "parentId": "INVOKE_SERVICE_a9cb481167234049a2161b70203b580e",
+            "callbackType": "Callback",
+            "enableMappingEditor": true
+        }]
+    }
+}

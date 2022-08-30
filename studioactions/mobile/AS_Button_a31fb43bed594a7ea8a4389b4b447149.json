@@ -1,0 +1,28 @@
+{
+    "AS_Button_a31fb43bed594a7ea8a4389b4b447149": {
+        "id": "AS_Button_a31fb43bed594a7ea8a4389b4b447149",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "PassScreen",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d54ecebd9a62479bb1c9e9bb96c7dcca"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__a7113f41f6d944339f41c611fc21c251",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "Home",
+            "formKUID": "e9a958dae55e42e8bd10302a66f2a586",
+            "mappings": {},
+            "mappingsOrder": [],
+            "enableMappingEditor": true,
+            "package": "",
+            "isCustomInput": false
+        }]
+    }
+}

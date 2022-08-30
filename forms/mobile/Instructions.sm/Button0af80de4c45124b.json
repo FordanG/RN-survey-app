@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s47e795cba3c4447921a0aef431ecef2",
+    "_text_": "Start Survey",
+    "_width_": {
+        "type": "string",
+        "value": "300dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s63b108efc524a87a55196ad080b16c4",
+    "id": "Button0af80de4c45124b",
+    "ide_onClick": "AS_Button_e5da888ceec6436ca4d495251a89bb07",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "db272272a51a4c56ae6369c18b42781c",
+    "name": "kony.ui.Button",
+    "parent": "Instructions",
+    "pf": "Instructions",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 1
+}

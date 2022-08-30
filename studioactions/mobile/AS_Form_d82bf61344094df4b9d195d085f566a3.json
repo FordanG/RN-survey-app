@@ -1,0 +1,99 @@
+{
+    "AS_Form_d82bf61344094df4b9d195d085f566a3": {
+        "id": "AS_Form_d82bf61344094df4b9d195d085f566a3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "Home",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e9a958dae55e42e8bd10302a66f2a586"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_c307728835a147dbbfe1866b465c080d",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "SurveyData",
+            "isGlobal": false,
+            "valuetype": "expression",
+            "datatype": "string",
+            "value": "Data[\"records\"]",
+            "parentId": "INVOKE_SERVICE_ea3f2b31baed4dd493cc9d312ab3de8e",
+            "callbackType": "Callback"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_e1efe98aa2d44cf8ae1b27cbfdfc3e68",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "SurveyNames",
+            "isGlobal": false,
+            "valuetype": "constant",
+            "datatype": "collection",
+            "value": "[]",
+            "parentId": "INVOKE_SERVICE_ea3f2b31baed4dd493cc9d312ab3de8e",
+            "callbackType": "Callback"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_ff4d1bf9e2334f7ba0f0c7d7aa8bab6a",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "SurveyIDs",
+            "isGlobal": false,
+            "valuetype": "constant",
+            "datatype": "collection",
+            "value": "[]",
+            "parentId": "INVOKE_SERVICE_ea3f2b31baed4dd493cc9d312ab3de8e",
+            "callbackType": "Callback"
+        }, {
+            "id": "ADD_SNIPPET_d1230bdc136e4a53b823391ac71feeb8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "for (let i = 0; i < SurveyData.length; i++) {\n  SurveyNames.push(SurveyData[i][\"Survey_Name\"])\n  SurveyIDs.push(SurveyData[i][\"Survey_ID\"])\n}\n",
+            "parentId": "INVOKE_SERVICE_ea3f2b31baed4dd493cc9d312ab3de8e",
+            "callbackType": "Callback"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_jbd7b344d5cc4e6ca51d962e3a5faef0",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "UniqueSurveyNames",
+            "isGlobal": false,
+            "valuetype": "expression",
+            "datatype": "string",
+            "value": "[...new Set(SurveyNames)]",
+            "parentId": "INVOKE_SERVICE_ea3f2b31baed4dd493cc9d312ab3de8e",
+            "callbackType": "Callback"
+        }, {
+            "id": "ADD_LOCAL_VARIABLE_b3bc80784bb04b53b3c3eb63109273e3",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "UniqueSurveyID",
+            "isGlobal": false,
+            "valuetype": "expression",
+            "datatype": "string",
+            "value": "[...new Set(SurveyIDs)]",
+            "parentId": "INVOKE_SERVICE_ea3f2b31baed4dd493cc9d312ab3de8e",
+            "callbackType": "Callback"
+        }, {
+            "id": "ADD_SNIPPET_e16ed1e0ac79404a9659e9b9d5fe8d37",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var collection = [];\nfor (var counter in UniqueSurveyNames) {\n    collection.push({\n        \"ImgSurvey\": {\n          \"text\": \"img1.png\"\n        },\n        \"lblCertTitle\": {\n            \"text\": UniqueSurveyNames[counter]\n        },\n        \"EntryID\": {\n            \"text\": UniqueSurveyID[counter]\n        },\n    });\n}\nself.view.SgmtCerts.setData(collection);\n",
+            "parentId": "INVOKE_SERVICE_ea3f2b31baed4dd493cc9d312ab3de8e",
+            "callbackType": "Callback"
+        }, {
+            "id": "INVOKE_SERVICE_ea3f2b31baed4dd493cc9d312ab3de8e",
+            "type": "INVOKE_OBJECT_SERVICE",
+            "inputparams": null,
+            "httpheaders": null,
+            "httpconfigs": null,
+            "isasynchronous": null,
+            "isoffline": null,
+            "isobject": true,
+            "mappings": {},
+            "mappingsOrder": [],
+            "serviceconfig": {
+                "servicename": "SurveyDB",
+                "type": "objectsvcs",
+                "objectname": "Data",
+                "serviceid": "a7097e84-6a4a-4db1-961e-26403b41f609",
+                "methodname": "get"
+            },
+            "enableMappingEditor": true
+        }]
+    }
+}

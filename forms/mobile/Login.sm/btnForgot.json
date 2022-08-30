@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s91e1b36d8d74192b9fb77b7d51608ce",
+    "_text_": "Forgot Password?",
+    "_top_": {
+        "type": "string",
+        "value": "87%"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s63b108efc524a87a55196ad080b16c4",
+    "id": "btnForgot",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "d04e0bb4fca74fa48dc1cfa492b601bd",
+    "name": "kony.ui.Button",
+    "parent": "FlexGroup0a611cf35aaca42",
+    "pf": "Login",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 1
+}

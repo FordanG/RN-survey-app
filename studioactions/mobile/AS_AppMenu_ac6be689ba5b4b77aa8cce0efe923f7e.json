@@ -1,0 +1,20 @@
+{
+    "AS_AppMenu_ac6be689ba5b4b77aa8cce0efe923f7e": {
+        "id": "AS_AppMenu_ac6be689ba5b4b77aa8cce0efe923f7e",
+        "type": "ACTION_SEQUENCE",
+        "params": [],
+        "contextObj": {
+            "name": "Rewards",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c86bf30add7e4b43ad86e06c899b8496"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_f32dcf0e686e4bd8814260a906c36c81",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var ntf = new voltmx.mvc.Navigation(\"Rewards\");\nntf.navigate();",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "AS_Button_dccdb6998e6446a9a18fc41d78f45f16": {
+        "id": "AS_Button_dccdb6998e6446a9a18fc41d78f45f16",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "StartScreen",
+            "type": "forms",
+            "platform": "",
+            "KUID": "dca55160c140420b8a849cec1af93e24"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__de0a445709864be5a811aa69ba1b7f87",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "Login",
+            "friendlyName": "",
+            "formKUID": "ef09666e2a22490a9a0ba852ea92bcee",
+            "mappings": {},
+            "mappingsOrder": [],
+            "enableMappingEditor": true,
+            "package": "",
+            "isCustomInput": false
+        }]
+    }
+}

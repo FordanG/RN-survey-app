@@ -1,0 +1,26 @@
+{
+    "AS_TextField_be9fbd90ede74bc9b715ae4cdbe9cd66": {
+        "id": "AS_TextField_be9fbd90ede74bc9b715ae4cdbe9cd66",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "userwidgetmodel",
+            "type": "userwidgets",
+            "KUID": "u0c77141a9424bc8b3446a8375ba5d35"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__hbc24a868c1f4e0f84db81ae9ff49ba5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if (this.view.Container6PinLine3.TxtFld6PinLine3.text.length == 1) {\n  this.view.Container6PinLine3.TxtFld6PinLine3.setFocus(false);\n  this.view.Container6PinLine4.TxtFld6PinLine4.setFocus(true);\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

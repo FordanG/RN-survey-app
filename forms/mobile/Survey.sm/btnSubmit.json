@@ -1,0 +1,56 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s47e795cba3c4447921a0aef431ecef2",
+    "_text_": "Next Question",
+    "_top_": {
+        "type": "string",
+        "value": "90.00%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "300dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50.00%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s63b108efc524a87a55196ad080b16c4",
+    "id": "btnSubmit",
+    "ide_onClick": "AS_Button_j76b81b418ae4142809344f9bb6732b7",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "a04c2ee32e164a609feb09445de82237",
+    "name": "kony.ui.Button",
+    "parent": "Survey",
+    "pf": "Survey",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 1
+}
